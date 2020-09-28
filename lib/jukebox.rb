@@ -49,8 +49,22 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
+def run(array)
+  loop do
   puts "Please enter a command:"
-  
+  command_input = gets.strip
+  if command_input == "help"
+    help
+  elsif command_input == "play"
+    play(array)
+  elsif command_input == "list"
+    list(array)
+  elsif command_input == "exit"
+    exit_jukebox
+  else 
+    help
+  end
+  break if exit_jukebox
+end
 end
 
