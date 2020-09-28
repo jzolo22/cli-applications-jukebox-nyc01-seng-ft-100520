@@ -50,7 +50,7 @@ def exit_jukebox
 end
 
 def run(array)
-  loop do
+  until exit_jukebox
   puts "Please enter a command:"
   command_input = gets.strip
   if command_input == "help"
@@ -64,7 +64,6 @@ def run(array)
   else 
     help
   end
-  break if exit_jukebox
 end
 end
 
