@@ -60,8 +60,8 @@ def run(array)
     play(array)
   elsif command_input == "list"
     list(array)
-  else 
-    help
+  elsif command_input == "exit" 
+    exit_jukebox
   end
 end
 exit_jukebox
