@@ -50,9 +50,9 @@ def exit_jukebox
 end
 
 def run(array)
-  until command_input == "exit" do 
   puts "Please enter a command:"
   command_input = gets.strip
+  until command_input == "exit" do 
   if command_input == "help"
     help
   elsif command_input == "play"
