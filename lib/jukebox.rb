@@ -66,6 +66,5 @@ def run(array)
     next
   end
 end
-exit_jukebox
 end
 
