@@ -52,18 +52,17 @@ end
 def run(array)
   puts "Please enter a command:"
   command_input = gets.strip
-  until command_input == "exit" do 
+  while command_input != "exit" do 
   if command_input == "help"
     help
   elsif command_input == "play"
     play(array)
   elsif command_input == "list"
     list(array)
-  elsif command_input == "exit"
-    exit_jukebox
   else 
     help
   end
 end
+exit_jukebox
 end
 
